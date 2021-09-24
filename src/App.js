@@ -1,3 +1,4 @@
+import { getData } from "./api/getData";
 import "./App.css";
 
 function App() {
