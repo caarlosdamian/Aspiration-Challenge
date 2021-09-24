@@ -11,21 +11,23 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding: 10px;
-
-  height: 50px;
+  height: 60px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
 `;
 
-const Navbar = () => {
+const Navbar = ({ setTheme, theme }) => {
   return (
     <Container>
       <Wrapper>
         <Link to="/">
           <Mode>HOME</Mode>
         </Link>
-        <Brightness4TwoToneIcon style={{ cursor: "pointer" }} />
+        <Brightness4TwoToneIcon
+          style={{ cursor: "pointer" }}
+          onClick={() => setTheme(!theme)}
+        />
       </Wrapper>
     </Container>
   );

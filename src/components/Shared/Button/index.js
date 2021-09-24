@@ -18,8 +18,8 @@ export const Button = styled.button`
     opacity: 0.9;
   }
   ${mobile({
-    padding: "10px 5px",
-    width: "70px",
+    padding: "10px 10px",
+    width: "85px",
     fontSize: "16px",
     margin: "0px 5px",
   })}

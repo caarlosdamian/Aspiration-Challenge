@@ -4,6 +4,7 @@ export const Mode = styled.span`
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
+  color:${({ color }) => color || "crimson"};
 `;
 
 export const Text = styled.text`
