@@ -38,12 +38,22 @@ const Card = ({ data }) => {
   return (
     <Container>
       <Flex alignItems="center" paddingBottom="20px" justifyContent="center">
-        <Text size="20px" color="black">
+        <Text header="true" size="20px" color="black">
           {data.name}
         </Text>
       </Flex>
 
-      <Button>
+      <Button
+        padding="5px 5px"
+        margin=" 10px 0px"
+        color="crimson"
+        display="flex"
+        backgroundColor="white"
+        border=" 1.5px solid crimson"
+        alignItems="center"
+        fontSize="16px"
+        width="100px"
+      >
         <StarBorderIcon style={{ color: "#e9d02c" }} />
         {data.stargazerCount}
       </Button>
@@ -55,7 +65,7 @@ const Card = ({ data }) => {
         ))}
       </List>
 
-      <Button>
+      <Button width="150px">
         <Anchor
           href={`https://www.google.com/search?q=${data.name}`}
           target="_blank"

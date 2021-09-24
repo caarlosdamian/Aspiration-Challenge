@@ -10,6 +10,7 @@ export const Text = styled.text`
   font-weight: bold;
   font-size: ${({ size }) => size || "18px"};
   color: ${({ color }) => color || "crimson"};
+  text-transform: ${(header) => (header ? "capitalize" : "")};
 `;
 
 export default Text;
