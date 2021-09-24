@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { routes } from "./routes";
 import "./App.css";
+import Navbar from "./components/Features/NavBar/Navbar";
 
 function App() {
   const routeComponents = routes.map(({ path, component }, key) => (
@@ -8,6 +9,7 @@ function App() {
   ));
   return (
     <Router>
+      <Navbar />
       <Switch>{routeComponents}</Switch>
     </Router>
   );
