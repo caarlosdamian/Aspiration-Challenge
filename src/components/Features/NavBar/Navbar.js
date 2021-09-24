@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   border-bottom: 1px solid lightgray;
 `;
 
-const Navbar = ({ setTheme, theme }) => {
+const Navbar = () => {
   return (
     <Container>
       <Wrapper>
